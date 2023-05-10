@@ -157,7 +157,7 @@ h1,
     }
 
     .slide {
-        min-height: 40em;
+        min-height: 100vh;
     }
 
     .logo {
