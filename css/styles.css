@@ -127,7 +127,7 @@ h1,
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 20em;
+    min-height: 100vh;
     margin-top: 2em
 }
 
@@ -144,6 +144,9 @@ h1,
 
 @media (max-width: 767px) {
     /* Estilos para dispositivos móviles */
+    .slide {
+        min-height: 100vh;
+    }
 }
 
 @media (min-width: 768px) {
