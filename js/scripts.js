@@ -22,7 +22,7 @@ $(document).ready(function () {
     });
 
 
-    const elementosAnimados = document.querySelectorAll('.title');
+    const elementosAnimados = document.querySelectorAll('.animate');
 
     const observador = new IntersectionObserver((entradas) => {
         entradas.forEach((entrada) => {
@@ -41,7 +41,7 @@ $(document).ready(function () {
 });
 
 const animarElemento = (elemento, indice) => {
-    const animacion = elemento.dataset.animacion;
+    const animacion = elemento.dataset.animate;
     elemento.classList.add(`animado-${indice}`, 'animate__animated', `animate__${animacion}`);
 
     // Eliminar la clase de animación después de que la animación haya terminado
