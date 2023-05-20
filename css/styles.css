@@ -5,6 +5,7 @@
     --color-spotify: #1DB954;
     --color-dark: #191414;
     --color-gold: #efb810;
+    --color-shadow:#1914145b;
 
     --font-title: 'Parisienne', cursive;
     --font-text: 'Montserrat', sans-serif;
@@ -21,7 +22,7 @@ body {
 }
 
 .bg-image {
-    background-image: url(../assets/img/bg.jpg);
+    background-image: url(../assets/img/bg-min.jpg);
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -123,12 +124,13 @@ h1,
 }
 
 .slide {
-    background-image: linear-gradient(360deg, #fff, 30%, #ffffff00), url(../assets/img/slide.jpg);
+    background-image: linear-gradient(360deg, #fff, 30%, #ffffff00), url(../assets/img/slide-min.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
-    margin-top: 2em
+    margin-top: 3em;
+    padding-top: 40vh;
 }
 
 .bg-light {
@@ -141,11 +143,51 @@ h1,
     width: 70%;
 }
 
+.super-title{
+    font-size: 50pt;    
+    color: var(--color-gold);
+    text-shadow: 2px 2px var(--color-shadow);
+    margin-bottom: -20pt;
+}
+.sub-title{
+    color:#fff ;
+    text-transform: uppercase;
+    font-size: 15pt;
+    text-anchor: 1pt;
+    text-shadow: 2px 2px var(--color-shadow);
+
+}
+
+.custom-button{
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 3vh;    
+    transition: 0.3s;
+    text-shadow: 2px 2px var(--color-shadow);
+}
+.custom-button:hover{
+    color: var(--color-gold);
+}
+
+.name_padres{
+    font-family: var(--font-title);
+    font-size: 25pt; 
+    font-weight: 400;
+    margin-bottom: -2vh;
+}
+
 
 @media (max-width: 767px) {
     /* Estilos para dispositivos móviles */
     .slide {
+        background-image: linear-gradient(360deg, #fff, 30%, #ffffff00), url(../assets/img/slide-mobile-min.jpg);
         min-height: 100vh;
+        padding-top: 45vh;
+    }
+    .name_padres{
+        font-size: 16pt; 
+        margin-bottom: -1vh;
     }
 }
 

@@ -4,6 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Nuestra Boda | Daniela & Daniel">
+    <meta property="og:description" content="Queremos invitarlos a compartir juntos el momento más importante de nuestras vidas.">
+    <meta property="og:image" content="/assets/img/wa-img-min.png">
+    <meta property="og:type" content="website">
+
+
 
     <title>Nuestra Boda | Daniela & Daniel</title>
 
@@ -71,7 +77,21 @@
     </nav>
 
     <div class="container-fluid px-0">
-        <div class="col-12 text-center slide"></div>
+        <div class="col-12 text-center slide">
+            <div class="row">
+                <div class="col-12">
+                    <!-- <h1 class="super-title title animate" data-animate="fadeInDown">Daniela &nbsp; & &nbsp; Daniel</h1>                     -->
+                    <h1 class="super-title title animate" data-animate="fadeInDown">Daniela</h1>                    
+                    <h1 class="super-title title animate" data-animate="fadeInDown">&</h1>                    
+                    <h1 class="super-title title animate" data-animate="fadeInDown">Daniel</h1>                    
+                </div>
+                <div class="col-12" style="margin-top: 10vh;">
+                    <button id="playPauseBtn" class="custom-button animate" data-animate="fadeInDown" data-state="paused" onclick="togglePlayPause()"><i id="playPauseIcon" class="fa-solid fa-play"></i></button>
+                    <audio id="myAudio" preload="auto" src="/assets/audio/music.mp3"></audio>
+                    <p class="sub-title animate" data-animate="fadeInDown">Escucha nuestra canción</p>                    
+                </div>
+            </div>
+        </div>
         <div class="col-12 text-center" id="nos-casamos">
             <section class="box">
                 <h1 class="title animate" data-animate="fadeInDown">¡Nos Casamos!</h1>
@@ -81,10 +101,24 @@
                     <div class="divider-custom-icon"><i class="fa-solid fa-heart"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <p class="text" style="text-align: justify;">
-                    Después de 6 años de casados por lo civil, hemos decidido por amor y buscando la gracia de Dios,
-                    unir nuestras vidas en el sacramento del matrimonio. Por lo que nos complace que sean partícipes de
-                    esta unión.
+                <p class="text" style="text-align: center;">
+                    Con la bendición de Dios y en compañía de nuestros padres...
+                </p>
+                <div class="row" style="margin-top: 5vh;margin-bottom: 5vh;">
+                    <div class="col-6 animate" data-animate="fadeInLeft">                        
+                        <p class="name_padres">Daniel Jimenez</p>
+                        <p class="name_padres">&</p>
+                        <p class="name_padres">Flor Cardenas</p>
+                    </div>
+                    <div class="col-6 animate" data-animate="fadeInRight">
+                        <p class="name_padres">German Quintero</p>
+                        <p class="name_padres">&</p>
+                        <p class="name_padres">Belkis Martinez</p>
+                    </div>
+                </div>
+                <p class="text" style="text-align: center;">
+                    Queremos invitarlos a compartir juntos el momento más importante de nuestras vidas, 
+                    en el cual, ante Dios y ustedes, comenzaremos esta hermosa historia.
                 </p>
                 <img class="logo" src="assets/img/logo.png" alt="Daniela & Daniel">
             </section>
@@ -178,6 +212,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- <img style="width: 80%;" src="assets/img/dress_code.png" alt="Dress Code"> -->
+                <!-- <img style="width: 40%;" src="assets/img/dress code.png" alt="Daniela & Daniel"> -->
                 <div class="container">
                     <div class="row">
                         <div class="col-6 animate" data-animate="fadeInLeft">
@@ -192,10 +227,13 @@
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-secondary" href="https://pin.it/3OiqR6y" target="_blank" >
+                <a class="btn btn-secondary" href="https://pin.it/3OiqR6y" target="_blank" style="margin-top: 6vh;">
                     <i class="fa-regular fa-eye"></i>
                     Ver Referencias
                 </a>
+                <p style="font-size: 1.5em; font-weight: 800; margin-top: 6vh;margin-bottom: 0vh;">Colores reservados</p>
+                <p>Blanco y Azul</p>
+
 
             </section>
         </div>

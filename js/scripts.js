@@ -87,3 +87,23 @@ var x = setInterval(function () {
     }
 }, 1000);
 
+function togglePlayPause() {
+    var btn = document.getElementById("playPauseBtn");
+    var state = btn.dataset.state;
+    var icon = document.getElementById("playPauseIcon");
+    var audio = document.getElementById("myAudio");
+
+    if (state === "paused") {        
+        btn.dataset.state = "playing";
+        icon.classList.remove("fa-play");
+        icon.classList.add("fa-pause");
+        audio.play();
+        // Agrega el código para reproducir el contenido deseado
+    } else {
+        btn.dataset.state = "paused";
+        icon.classList.remove("fa-pause");
+        icon.classList.add("fa-play");
+        audio.pause();
+        // Agrega el código para pausar el contenido deseado
+    }
+}
