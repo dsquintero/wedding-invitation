@@ -120,12 +120,13 @@ h1,
 }
 
 .box {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    /* margin-top: 5vh;
+    margin-bottom: 5vh; */
     margin-left: 2vh;
     margin-right: 2vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    /* background-color: #ffffff85; */
 }
 
 .countdown {
@@ -156,13 +157,15 @@ h1,
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
-    margin-top: 3em;
     padding-top: 30vh;
 }
 
 .bg-light {
     background-color: #fff !important;
     /* opacity: 0.2; */
+}
+.lightbox{
+    background-color: #ffffff00;
 }
 
 .logo {
@@ -211,9 +214,10 @@ h1,
 .name_padres {
     font-family: var(--font-title);
     font-size: 25pt;
-    font-weight: 400;
-    margin-bottom: -2vh;
+    font-weight: 600;
+    margin-bottom: -2vh;   
 }
+
 
 .icon-wedding {
     width: 15%;
