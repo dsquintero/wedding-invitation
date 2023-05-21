@@ -40,6 +40,11 @@ $(document).ready(function () {
 
 });
 
+$(document).on("click", '[data-toggle="lightbox"]', function (event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
+
 const animarElemento = (elemento, indice) => {
     const animacion = elemento.dataset.animate;
     elemento.classList.add(`animado-${indice}`, 'animate__animated', `animate__${animacion}`);
@@ -93,7 +98,7 @@ function togglePlayPause() {
     var icon = document.getElementById("playPauseIcon");
     var audio = document.getElementById("myAudio");
 
-    if (state === "paused") {        
+    if (state === "paused") {
         btn.dataset.state = "playing";
         icon.classList.remove("fa-play");
         icon.classList.add("fa-pause");

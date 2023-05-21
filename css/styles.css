@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
 :root {
-    --color-primary: #2596be;
+    --color-primary: #004f7e;
     --color-spotify: #1DB954;
     --color-dark: #191414;
     --color-gold: #efb810;
-    --color-shadow:#1914145b;
+    --color-shadow: #1914145b;
 
     --font-title: 'Parisienne', cursive;
     --font-text: 'Montserrat', sans-serif;
@@ -19,6 +19,7 @@ body {
     font-family: var(--font-text);
     font-weight: 400;
     color: var(--color-dark);
+    background-color: #fff
 }
 
 .bg-image {
@@ -28,6 +29,23 @@ body {
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
+}
+
+.bg-mobile {
+    object-fit: cover;
+    object-position: -4vh -5vh;
+    /* height: 110vh; */
+    position: fixed;
+    top: 0px;
+    visibility: hidden;
+}
+.bg-desktop{
+    object-fit: cover;
+    object-position: 0vh 0vh;
+    width: 220vh;
+    /* height: 110vh; */
+    position: fixed;
+    top: 0px;
 }
 
 h6,
@@ -68,7 +86,7 @@ h1,
 .divider-custom .divider-custom-line {
     width: 100%;
     max-width: 7rem;
-    height: 0.10rem;
+    height: 0.06rem;
     background-color: var(--color-dark);
     border-radius: 1rem;
     border-color: var(--color-dark);
@@ -84,7 +102,7 @@ h1,
 
 .divider-custom .divider-custom-icon {
     color: var(--color-dark);
-    font-size: 0.75rem;
+    font-size: 0.55rem;
 }
 
 .divider-custom.divider-light .divider-custom-line {
@@ -143,14 +161,15 @@ h1,
     width: 70%;
 }
 
-.super-title{
-    font-size: 50pt;    
+.super-title {
+    font-size: 50pt;
     color: var(--color-gold);
     text-shadow: 2px 2px var(--color-shadow);
     margin-bottom: -20pt;
 }
-.sub-title{
-    color:#fff ;
+
+.sub-title {
+    color: #fff;
     text-transform: uppercase;
     font-size: 15pt;
     text-anchor: 1pt;
@@ -158,36 +177,78 @@ h1,
 
 }
 
-.custom-button{
+.custom-button {
     border: none;
     background: none;
     color: #fff;
-    font-size: 3vh;    
+    font-size: 3vh;
     transition: 0.3s;
     text-shadow: 2px 2px var(--color-shadow);
 }
-.custom-button:hover{
+
+.custom-button:hover {
     color: var(--color-gold);
 }
 
-.name_padres{
+.name_padres {
     font-family: var(--font-title);
-    font-size: 25pt; 
+    font-size: 25pt;
     font-weight: 400;
     margin-bottom: -2vh;
 }
 
+.icon-wedding {
+    width: 15%;
+    margin-bottom: 1em;
+}
+
+.nav-item>.nav-link.active {
+    background-color: var(--color-primary);
+    border-radius: 2vh;
+    transition: 0.2s;
+}
+
+.nav-link.active,
+.nav-link.active:hover,
+.nav-link.active::selection {
+    color: #fff !important;
+    transition: 0.2s;
+}
+
+.nav-link:hover,
+.nav-link::selection {
+    color: var(--color-primary) !important;
+
+}
 
 @media (max-width: 767px) {
+
     /* Estilos para dispositivos móviles */
     .slide {
         background-image: linear-gradient(360deg, #fff, 30%, #ffffff00), url(../assets/img/slide-mobile-min.jpg);
         min-height: 100vh;
         padding-top: 45vh;
     }
-    .name_padres{
-        font-size: 16pt; 
+
+    .name_padres {
+        font-size: 16pt;
         margin-bottom: -1vh;
+    }
+
+    .icon-wedding {
+        width: 27%;
+    }
+
+    .nav-item>.nav-link.active {
+        width: 60%;
+        padding-left: 2vh;
+    }
+
+    .bg-mobile {       
+        visibility: visible;
+    }
+    .bg-desktop{
+        visibility: hidden;
     }
 }
 
@@ -207,5 +268,11 @@ h1,
 
     .logo {
         width: 50%;
+    }
+    .bg-mobile {       
+        visibility: hidden;
+    }
+    .bg-desktop{
+        visibility: visible;
     }
 }

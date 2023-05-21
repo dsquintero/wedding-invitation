@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="Nuestra Boda | Daniela & Daniel">
-    <meta property="og:description" content="Queremos invitarlos a compartir juntos el momento más importante de nuestras vidas.">
+    <meta property="og:description"
+        content="Queremos invitarlos a compartir juntos el momento más importante de nuestras vidas.">
     <meta property="og:image" content="https://dsquintero.github.io/wedding-invitation/assets/img/wa-img-min.png">
     <meta property="og:type" content="website">
 
@@ -34,12 +35,17 @@
     <!-- Animate.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+        integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Core theme CSS-->
     <link href="css/styles.css" rel="stylesheet" />
-
 </head>
 
-<body class="bg-image" data-spy="scroll" data-target="#navbar">
+<body class="" data-spy="scroll" data-target="#navbar">
+    <img class="bg-desktop" src="assets/img/bg_1-min.jpg" alt="bg_mobile" fetchpriority="high">
+    <img class="bg-mobile" src="assets/img/bg_2-min.jpg" alt="bg_mobile" fetchpriority="high">
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
 
         <a class="navbar-brand" href="#" style="color: var(--color-gold);">#LOSDANIS</a>
@@ -64,10 +70,13 @@
                     <a class="nav-link" href="#codigo">Código de vestir</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#musica">Música</a>
+                    <a class="nav-link" href="#regalo">Lista de regalos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#confirmar">Confirmar Asistencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#musica">Música</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#ojo">Para tener en cuenta</a>
@@ -81,14 +90,16 @@
             <div class="row">
                 <div class="col-12">
                     <!-- <h1 class="super-title title animate" data-animate="fadeInDown">Daniela &nbsp; & &nbsp; Daniel</h1>                     -->
-                    <h1 class="super-title title animate" data-animate="fadeInDown">Daniela</h1>                    
-                    <h1 class="super-title title animate" data-animate="fadeInDown">&</h1>                    
-                    <h1 class="super-title title animate" data-animate="fadeInDown">Daniel</h1>                    
+                    <h1 class="super-title title animate" data-animate="fadeInDown">Daniela</h1>
+                    <h1 class="super-title title animate" data-animate="fadeInDown">&</h1>
+                    <h1 class="super-title title animate" data-animate="fadeInDown">Daniel</h1>
                 </div>
                 <div class="col-12" style="margin-top: 10vh;">
-                    <button id="playPauseBtn" class="custom-button animate" data-animate="fadeInDown" data-state="paused" onclick="togglePlayPause()"><i id="playPauseIcon" class="fa-solid fa-play"></i></button>
+                    <button id="playPauseBtn" class="custom-button animate" data-animate="fadeInDown"
+                        data-state="paused" onclick="togglePlayPause()"><i id="playPauseIcon"
+                            class="fa-solid fa-play"></i></button>
                     <audio id="myAudio" preload="auto" src="assets/audio/music.mp3"></audio>
-                    <p class="sub-title animate" data-animate="fadeInDown">Escucha nuestra canción</p>                    
+                    <p class="sub-title animate" data-animate="fadeInDown">Escucha nuestra canción</p>
                 </div>
             </div>
         </div>
@@ -101,26 +112,27 @@
                     <div class="divider-custom-icon"><i class="fa-solid fa-heart"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
+                <img class="icon-wedding animate" src="assets/img/rings.svg" alt="rings" data-animate="tada">
                 <p class="text" style="text-align: center;">
                     Con la bendición de Dios y en compañía de nuestros padres...
                 </p>
                 <div class="row" style="margin-top: 5vh;margin-bottom: 5vh;">
-                    <div class="col-6 animate" data-animate="fadeInLeft">                        
+                    <div class="col-6 animate" data-animate="fadeInDown">
                         <p class="name_padres">Daniel Jimenez</p>
                         <p class="name_padres">&</p>
                         <p class="name_padres">Flor Cardenas</p>
                     </div>
-                    <div class="col-6 animate" data-animate="fadeInRight">
+                    <div class="col-6 animate" data-animate="fadeInDown">
                         <p class="name_padres">German Quintero</p>
                         <p class="name_padres">&</p>
                         <p class="name_padres">Belkis Martinez</p>
                     </div>
                 </div>
                 <p class="text" style="text-align: center;">
-                    Queremos invitarlos a compartir juntos el momento más importante de nuestras vidas, 
+                    Queremos invitarlos a compartir juntos el momento más importante de nuestras vidas,
                     en el cual, ante Dios y ustedes, comenzaremos esta hermosa historia.
                 </p>
-                <img class="logo" src="assets/img/logo.png" alt="Daniela & Daniel">
+                <img class="logo" src="assets/img/wa-img-min.png" alt="Daniela & Daniel">
             </section>
         </div>
         <div class="col-12 text-center bg-blue" id="lugar">
@@ -132,11 +144,12 @@
                     <div class="divider-custom-icon"><i class="fa-solid fa-heart"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
+                <img class="icon-wedding animate" src="assets/img/location.svg" alt="location" data-animate="tada">
                 <p class="text" style="text-transform: uppercase; margin-bottom: -0.5em; font-size: 0.8em;"><b>Centro
                         recreacional</b></p>
                 <p class="text" style="text-transform: uppercase; font-size: 1.5em;"><b>solinilla</b></p>
                 <p class="text">Sabanilla, Puerto Colombia, Atlántico</p>
-                <a class="btn btn-secondary" href="https://goo.gl/maps/W7RMxznsZh4wbhRU7" target="_blank"> 
+                <a class="btn btn-secondary" href="https://goo.gl/maps/W7RMxznsZh4wbhRU7" target="_blank">
                     <i class="fa-solid fa-location-crosshairs"></i>
                     Como llegar
                 </a>
@@ -151,6 +164,7 @@
                     <div class="divider-custom-icon"><i class="fa-solid fa-heart"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
+                <img class="icon-wedding animate" src="assets/img/calendar.svg" alt="calendar" data-animate="tada">
                 <p class="text" style="font-size: 1.5em; font-weight: 400;">
                     19 / 08 / 2023
                 </p>
@@ -215,13 +229,13 @@
                 <!-- <img style="width: 40%;" src="assets/img/dress code.png" alt="Daniela & Daniel"> -->
                 <div class="container">
                     <div class="row">
-                        <div class="col-6 animate" data-animate="fadeInLeft">
-                            <img style="width: 40%;" src="assets/img/women.png" alt="Daniela & Daniel">
+                        <div class="col-6 animate" data-animate="fadeInUp">
+                            <img style="width: 100%;" src="assets/img/women.svg" alt="women">
                             <p style="font-size: 1.5em; font-weight: 800;">Mujeres</p>
                             <p>Vestido formal</p>
                         </div>
-                        <div class="col-6 animate" data-animate="fadeInRight">
-                            <img style="width: 40%;" src="assets/img/men.png" alt="Daniela & Daniel">
+                        <div class="col-6 animate" data-animate="fadeInUp">
+                            <img style="width: 100%;" src="assets/img/men.svg" alt="men">
                             <p style="font-size: 1.5em; font-weight: 800;">Hombres</p>
                             <p>Guayabera</p>
                         </div>
@@ -231,10 +245,88 @@
                     <i class="fa-regular fa-eye"></i>
                     Ver Referencias
                 </a>
-                <p style="font-size: 1.5em; font-weight: 800; margin-top: 6vh;margin-bottom: 0vh;">Colores reservados</p>
+                <p style="font-size: 1.5em; font-weight: 800; margin-top: 6vh;margin-bottom: 0vh;">Colores reservados
+                </p>
                 <p>Blanco y Azul</p>
 
 
+            </section>
+        </div>
+        <div class="col-12 text-center page-section" id="regalo">
+            <section class="box">
+                <h1 class="title animate" data-animate="fadeInDown">Lista de regalos</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom animate" data-animate="fadeInDown">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fa-solid fa-heart"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <img class="icon-wedding animate" src="assets/img/gift.svg" alt="gift" class="animate" data-animate="tada">
+
+                <p class="text">
+                    Tu presencia es lo mas importante, pero si quieres tener un detalle con nosotros podrás hacerlo a
+                    travez de nuestra lista de regalos en la tienda.
+                </p>
+                <p class="text"><b>HOME SENTRY, BAQ</b></p>
+
+                <p class="text">
+                    Acercate a servicio al cliente solicitando la lista de regalos.
+                </p>
+                <button class="btn btn-primary">
+                    <!-- <i class="fa-brands fa-spotify"></i> -->
+                    <p class="text" style="font-size: 15pt; margin: auto;">No. 40</p>
+                </button>
+
+                <p class="text">
+
+                </p>
+                <p class="text">
+                    <b>Dirección:</b> Cc Viva Barranquilla Carrera 51b # 87-50 Local 225, Piso 2.
+                </p>
+
+            </section>
+        </div>
+        <div class="col-12 text-center bg-blue" id="confirmar">
+            <section class="box">
+                <h1 class="title animate" data-animate="fadeInDown">Confirmar Asistencia</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light animate" data-animate="fadeInDown">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fa-solid fa-heart"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <img class="icon-wedding animate" src="assets/img/list.svg" alt="list" class="animate" data-animate="tada">
+                <p class="text">
+                    Da clic en el siguiente botón para registrar asistencia.
+                </p>
+                <a class="btn btn-secondary animate" href="https://forms.gle/N4xdZeS8QrtYzHap9" target="_blank"
+                    style="margin-bottom: 2.5em;" data-animate="shakeX">
+                    <i class="fa-regular fa-circle-check"></i>
+                    Registro de confirmación
+                </a>
+
+                <p class="text">
+                    Déjales un mensaje a los novios...
+                </p>
+                <!-- <img style="width: 80%;" src="assets/img/dress_code.png" alt="Dress Code"> -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <a class="btn btn-secondary" href="https://wa.me/+573016219355?text=😜 Hola..."
+                                target="_blank" style="background-color: var(--color-spotify);">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                Daniela
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a class="btn btn-secondary" href="https://wa.me/+573002564950?text=😜 Hola..."
+                                target="_blank" style="background-color: var(--color-spotify);">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                Daniel
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
         <div class="col-12 text-center page-section" id="musica">
@@ -246,7 +338,7 @@
                     <div class="divider-custom-icon"><i class="fa-solid fa-heart"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <img style="width: 15%; margin-bottom: 1em;" src="assets/img/nota-musical.png" alt="Spotify" class="animate" data-animate="tada">
+                <img class="icon-wedding animate" src="assets/img/music.svg" alt="music" class="animate" data-animate="tada">
 
                 <p class="text">
                     ¡Ayúdanos para que nuestra boda sea inolvidable!
@@ -262,48 +354,6 @@
 
             </section>
         </div>
-        <div class="col-12 text-center bg-blue" id="confirmar">
-            <section class="box">
-                <h1 class="title animate" data-animate="fadeInDown">Confirmar Asistencia</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light animate" data-animate="fadeInDown">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fa-solid fa-heart"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <p class="text">
-                    Da clic en el siguiente botón para registrar asistencia.
-                </p>
-                <a class="btn btn-secondary animate" href="https://forms.gle/N4xdZeS8QrtYzHap9" target="_blank" 
-                style="margin-bottom: 2.5em;" data-animate="shakeX">
-                    <i class="fa-regular fa-circle-check"></i>
-                    Registro de confirmación
-                </a>
-
-                <p class="text">
-                    Déjales un mensaje a los novios...
-                </p>
-                <!-- <img style="width: 80%;" src="assets/img/dress_code.png" alt="Dress Code"> -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6">
-                            <a class="btn btn-secondary" href="https://wa.me/+573016219355?text=😜 Hola..." target="_blank"
-                                style="background-color: var(--color-spotify);">
-                                <i class="fa-brands fa-whatsapp"></i>
-                                Daniela
-                            </a>
-                        </div>
-                        <div class="col-6">
-                            <a class="btn btn-secondary" href="https://wa.me/+573002564950?text=😜 Hola..." target="_blank"
-                                style="background-color: var(--color-spotify);">
-                                <i class="fa-brands fa-whatsapp"></i>
-                                Daniel
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
         <div class="col-12 text-center" id="ojo">
             <section class="box">
                 <h1 class="title animate" data-animate="fadeInDown">Para tener en cuenta</h1>
@@ -313,13 +363,12 @@
                     <div class="divider-custom-icon"><i class="fa-solid fa-heart"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
+                <img class="icon-wedding animate" src="assets/img/alert.svg" alt="alert" data-animate="tada">
                 <div class="container countdown">
                     <p class="text">Aunque nos gustan los niños, esta será una celebración solo para adultos</p>
                 </div>
             </section>
         </div>
-
-
     </div>
 
     <!-- <audio preload="auto" src="/assets/audio/music.mp3" id="my-audio"></audio> -->
@@ -334,7 +383,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+        integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 
