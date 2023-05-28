@@ -49,13 +49,13 @@ body {
     top: 0px;
 }
 
-.clock {
+/* .clock {
     width: 650px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-}
+} */
 
 h6,
 .h6,
@@ -255,9 +255,40 @@ h1,
 
 }
 
+.clock{
+    background-color: var(--color-primary);
+    width: 50%;
+    border-radius: 2vh;
+    color: #fff;
+    font-size: 50pt;
+    font-weight: 600;
+    padding: 1vh 1vh 1vh 1vh;
+    margin: auto;
+}
+.text_clock{
+    margin-top: 1vh;
+    font-size: 10pt;
+}
+
 @media (max-width: 767px) {
 
     /* Estilos para dispositivos móviles */
+
+    .clock{        
+        width: 100%;
+        border-radius: 2vh;
+        color: #fff;
+        font-size: 20pt;
+        font-weight: 600;
+        padding: 1vh 1vh 1vh 1vh;
+        margin: auto;
+    }
+    .text_clock{
+        
+        margin-top: 1vh;
+        font-size: 8pt;
+        font-weight: 600;
+    }
     .slide {
         background-image: linear-gradient(360deg, #fff, 30%, #ffffff00), url(../assets/img/slide-mobile-min.jpg);
         min-height: 100vh;

@@ -35,9 +35,12 @@
     <!-- Animate.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
         integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css'> -->
+
 
     <!-- Core theme CSS-->
     <link href="css/styles.css" rel="stylesheet" />
@@ -106,7 +109,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 text-center lightbox" id="nos-casamos" >
+        <div class="col-12 text-center lightbox" id="nos-casamos">
             <section class="box">
                 <h1 class="title animate" data-animate="fadeInDown">¡Nos Casamos!</h1>
                 <!-- Icon Divider-->
@@ -178,7 +181,7 @@
                     FALTAN
                 </p>
                 <!-- <p style="font-size: 1em;margin-top: -1em; font-weight: 300;" id="countdown"></p> -->
-                <div class="container countdown" id="countdown">
+                <!-- <div class="container countdown" id="countdown">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="row">
@@ -213,8 +216,44 @@
                             </div>
                         </div>
                     </div>
+                </div> -->
+                <div class="container" id="countdown">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="clock"><p id="days"></p></div>                                    
+                                </div>
+                                <div class="col-3">
+                                    <div class="clock"><p id="Hours"></p></div>                                    
+                                </div>
+                                <div class="col-3">
+                                    <div class="clock"><p id="Minutes"></p></div>                                    
+                                </div>
+                                <div class="col-3">
+                                    <div class="clock"><p id="Seconds"></p></div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-3">
+                                    <p class="text_clock">Dias</p>
+                                </div>
+                                <div class="col-3">
+                                    <p class="text_clock">Horas</p>
+                                </div>
+                                <div class="col-3">
+                                    <p class="text_clock">Minutos</p>
+                                </div>
+                                <div class="col-3">
+                                    <p class="text_clock">Segundos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="clock"></div>
+                <!-- <div class="clock"></div> -->
                 <div class="container" style="display: none;" id="es-hoy">
                     <p style="font-size: 1.5em; font-weight: 400;">Es hoy, es hoy!!!🎉🥳</p>
                 </div>
@@ -238,7 +277,8 @@
                             <p style="font-size: 1.5em; font-weight: 800;">Mujeres</p>
                             <p>Vestido largo</p>
                             <p>Tropical chic</p>
-                            <a class="btn btn-secondary" href="https://pin.it/5gG1yxA" target="_blank" style="margin-top: 6vh;">
+                            <a class="btn btn-secondary" href="https://pin.it/5gG1yxA" target="_blank"
+                                style="margin-top: 6vh;">
                                 <i class="fa-regular fa-eye"></i>
                                 Ver Referencias
                             </a>
@@ -248,14 +288,15 @@
                             <p style="font-size: 1.5em; font-weight: 800;">Hombres</p>
                             <p>Guayabera blanca</p>
                             <p>Pantalon beige</p>
-                            <a class="btn btn-secondary" href="https://pin.it/34Yu24C" target="_blank" style="margin-top: 6vh;">
+                            <a class="btn btn-secondary" href="https://pin.it/34Yu24C" target="_blank"
+                                style="margin-top: 6vh;">
                                 <i class="fa-regular fa-eye"></i>
                                 Ver Referencias
                             </a>
                         </div>
                     </div>
                 </div>
-                
+
                 <p style="font-size: 1.5em; font-weight: 800; margin-top: 6vh;margin-bottom: 0vh;">Colores reservados
                 </p>
                 <p>Blanco y Azul</p>
@@ -379,8 +420,8 @@
                     <div class="animate" data-animate="fadeInDown"><i style="font-size: 70pt;color:var(--color-gold)"
                             class="fa-brands fa-instagram"></i></div>
                     <p class="sub-title2 animate" data-animate="fadeInDown">#LOSDANIS</p>
-                    <a class="btn btn-secondary animate" href="https://www.instagram.com/explore/tags/losdanis/" target="_blank"
-                        style="margin-bottom: 2.5em;margin-top: 5vh;" data-animate="shakeX">                        
+                    <a class="btn btn-secondary animate" href="https://www.instagram.com/explore/tags/losdanis/"
+                        target="_blank" style="margin-bottom: 2.5em;margin-top: 5vh;" data-animate="shakeX">
                         Ver fotos en Instagram
                     </a>
                 </div>
@@ -400,8 +441,9 @@
                     <p class="text">Aunque nos gustan los niños, esta será una celebración solo para adultos.</p>
                 </div>
                 <div class="container countdown" style="margin-top: 2vh;">
-                    <p class="text">Estamos encantados de tenerlos en nuestra boda y agradecemos su apoyo. 
-                        Queremos recordarles que los cupos son intransferibles. Les pedimos amablemente que respeten esta solicitud 
+                    <p class="text">Estamos encantados de tenerlos en nuestra boda y agradecemos su apoyo.
+                        Queremos recordarles que los cupos son intransferibles. Les pedimos amablemente que respeten
+                        esta solicitud
                         y asistan únicamente con la persona mencionada en la invitación.</p>
                 </div>
             </section>
@@ -424,11 +466,13 @@
         integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/x.y.z/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/x.y.z/locale/ar.js"></script>
+    <!-- <script src='https://momentjs.com/downloads/moment.js'></script>
+    <script
+        src='https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-with-data-2012-2022.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.js'></script> -->
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    <script src="js/clock.js"></script>
+    <!-- <script src="js/clock.js"></script> -->
 
 </body>
 
