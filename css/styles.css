@@ -271,7 +271,8 @@ margin-bottom: 0;
 }
 .text_clock{
     margin-top: 1vh;
-    font-size: 10pt;
+    font-size: 12pt;
+    margin-left: -4.5vh;
 }
 .space_clock{
     font-size: 60pt;
@@ -292,11 +293,11 @@ margin-bottom: 0;
         padding: 1vh 0vh 1vh 0vh;
         margin: 0vh -1vh 0vh -1vh;
     }
-    .text_clock{
-        
+    .text_clock{        
         margin-top: 1vh;
         font-size: 8pt;
         font-weight: 600;
+        margin-left: 0;
     }
     .space_clock{
         font-size: 25pt;
