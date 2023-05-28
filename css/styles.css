@@ -257,7 +257,7 @@ h1,
 
 .clock{
     background-color: var(--color-primary);
-    width: 50%;
+    width: 100%;
     border-radius: 2vh;
     color: #fff;
     font-size: 50pt;
@@ -265,9 +265,18 @@ h1,
     padding: 1vh 1vh 1vh 1vh;
     margin: auto;
 }
+
+.clock > p{
+margin-bottom: 0;
+}
 .text_clock{
     margin-top: 1vh;
     font-size: 10pt;
+}
+.space_clock{
+    font-size: 60pt;
+    font-weight: 600;
+    color: var(--color-primary);
 }
 
 @media (max-width: 767px) {
@@ -275,19 +284,24 @@ h1,
     /* Estilos para dispositivos móviles */
 
     .clock{        
-        width: 100%;
-        border-radius: 2vh;
+        width: unset;
+        border-radius: 1vh;
         color: #fff;
-        font-size: 20pt;
+        font-size: 17pt;
         font-weight: 600;
-        padding: 1vh 1vh 1vh 1vh;
-        margin: auto;
+        padding: 1vh 0vh 1vh 0vh;
+        margin: 0vh -1vh 0vh -1vh;
     }
     .text_clock{
         
         margin-top: 1vh;
         font-size: 8pt;
         font-weight: 600;
+    }
+    .space_clock{
+        font-size: 25pt;
+        font-weight: 600;
+        color: var(--color-primary);
     }
     .slide {
         background-image: linear-gradient(360deg, #fff, 30%, #ffffff00), url(../assets/img/slide-mobile-min.jpg);
