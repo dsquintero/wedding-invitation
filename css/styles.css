@@ -33,7 +33,7 @@ body {
 
 .bg-mobile {
     object-fit: cover;
-    object-position: -4vh -5vh;
+    object-position: 0vh 0vh;
     /* height: 110vh; */
     position: fixed;
     top: 0px;
@@ -42,7 +42,7 @@ body {
 .bg-desktop{
     object-fit: cover;
     object-position: 0vh 0vh;
-    width: 220vh;
+    /* width: 220vh; */
     /* height: 110vh; */
     position: fixed;
     top: 0px;
@@ -152,7 +152,8 @@ h1,
     padding-top: 40vh;
 }
 .slide2 {
-    background-image: linear-gradient(360deg, #fff, 30%, #ffffff00), url(../assets/img/slide2-min.jpg);
+    /* background-image: linear-gradient(360deg, #fff, 30%, #ffffff00), url(../assets/img/slide2-min.jpg); */
+    background-image: url(../assets/img/slide2-min.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -253,7 +254,8 @@ h1,
     }
 
     .slide2 {
-        background-image: linear-gradient(360deg, #fff, 30%, #ffffff00), url(../assets/img/slide2-mobile-min.jpg);
+        /* background-image: linear-gradient(360deg, #fff, 30%, #ffffff00), url(../assets/img/slide2-mobile-min.jpg); */
+        background-image: url(../assets/img/slide2-mobile-min.jpg);
         min-height: 100vh;
         padding-top: 15vh;
     }
